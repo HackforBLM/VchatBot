@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>Youssouf's Version</h1>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <h1>V Chat says "Hello World"</h1>
+      {/* Photo & CTA Buttons */}
+
+      {/* Missions & Values */}
+      <section>
+        <div>
+          <h2 className='text-xl'>Mission</h2>
+          <p>
+            The Center For Racial Justice in Education focuses on educating the
+            community on racial justice, our goal is to make their educational
+            resources easily accessible to the user, by allowing the user to
+            tell our bot what they’re looking for, and the bot simply fetches
+            the resources to provide an interactive experience.
+          </p>
+        </div>
+      </section>
+
+      {/* Features Highlight */}
+    </Layout>
   );
 }
 

@@ -19,10 +19,10 @@ function App() {
             tell our bot what they’re looking for, and the bot simply fetches
             the resources to provide an interactive experience.
           </p>
-          <div className="flex justify-end">
+          {/* <div className="flex justify-end">
             <iframe className="rounded" title="chatbox" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/ff6a7a28-4a3d-449b-9fe2-9823b283360b"></iframe>
-          </div>
-          
+          </div> */}
+
         </div>
       </section>
 

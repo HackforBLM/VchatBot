@@ -69,18 +69,18 @@ class App extends React.Component {
               <div className='w-1/2 mt-10'>
                 <h1 className='text-2xl font-family-karla py-6'>Why Vi?</h1>
                 <p className='font-family-montserrat'>
-                  [Normal Font] The Center For Racial Justice in Education
-                  focuses on educating the community on racial justice, our goal
-                  is to make their educational resources easily accessible to
-                  the user, by allowing the user to tell our bot what they’re
-                  looking for, and the bot simply fetches the resources to
-                  provide an interactive experience.
+                  The Center For Racial Justice in Education focuses on
+                  educating the community on racial justice, our goal is to make
+                  their educational resources easily accessible to the user, by
+                  allowing the user to tell our bot what they’re looking for,
+                  and the bot simply fetches the resources to provide an
+                  interactive experience.
                 </p>
                 <p className='font-family-montserrat py-8'>
-                  [antialiased] Vi is a help bot designed for the Center For
-                  Racial Justice in Education. Vi can help you find resources,
-                  answers, articles, and any information you would find on the
-                  Center For Racial Justice in Education website
+                  Vi is a help bot designed for the Center For Racial Justice in
+                  Education. Vi can help you find resources, answers, articles,
+                  and any information you would find on the Center For Racial
+                  Justice in Education website
                 </p>
               </div>
             </div>
@@ -96,9 +96,8 @@ class App extends React.Component {
             <div className='max-w-xl m-auto'>
               <h1 className='text-2xl font-family-karla'>How it Works</h1>
               <p className='font-family-montserrat py-8'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-                rerum in exercitationem quibusdam quod deserunt ea commodi sunt
-                nulla consequatur.
+                After clicking on the ICON, you can ask Vi a question, or let Vi
+                lead the conversation.
               </p>
 
               <div className='bg-yellow-500 p-6 rounded'>
@@ -110,11 +109,6 @@ class App extends React.Component {
           <section className='bg-yellow-500 text-center p-12'>
             <div className='max-w-xl m-auto'>
               <h1 className='text-2xl font-family-karla'>FAQ</h1>
-              <p className='hidden font-family-montserrat py-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi accusantium optio vero, nulla cumque quaerat?
-                Aspernatur repellat veniam ullam optio?
-              </p>
 
               <ModalFAQ></ModalFAQ>
 

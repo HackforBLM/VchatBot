@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Layout from './components/Layout';
+import FAB from './components/FAB';
+
 import humaaansPhone from './assets/humaaansPhone.svg';
 import humaaansPerson from './assets/humaaansPerson.svg';
 import mission from './assets/mission.svg';
@@ -91,21 +93,23 @@ function App() {
       <section className='hidden'>
         <div>
           <h2 className='text-xl'>Mission</h2>
+        </div>
+      </section>
 
-          <div className='flex justify-end'>
+      {/* Floating Action Button */}
+      <div className='fixed bottom-0 right-0 p-6'>
+        <div className='absolute bottom-0 right-0 p-6'>
+          <FAB>
             <iframe
-              className='rounded'
               title='chatbox'
               allow='microphone;'
               width='350'
               height='430'
               src='https://console.dialogflow.com/api-client/demo/embedded/76105e13-83a8-465e-9fa2-fe31b78136c4'
             ></iframe>
-          </div>
+          </FAB>
         </div>
-      </section>
-
-      {/* Features Highlight */}
+      </div>
     </Layout>
   );
 }

@@ -2,7 +2,8 @@ import React from 'react';
 
 import { FabContext } from '../fab-context';
 
-import messenger from '../assets/messenger.svg';
+// import messenger from '../assets/messenger.svg';
+import chatbubble from '../assets/chatbubble.png';
 
 const FAB = (props) => {
   return (
@@ -29,7 +30,7 @@ const FAB = (props) => {
                 />
               </svg>
             ) : (
-              <img src={messenger} alt='messenger' />
+              <img src={chatbubble} alt='chatbubble' />
             )}
           </button>
         </div>

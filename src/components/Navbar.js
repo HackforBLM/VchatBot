@@ -2,8 +2,8 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 
 const links = [
-  { name: 'Why V?', url: '#value', target: false },
-  { name: 'Integrations', url: '#/', target: false },
+  { name: 'Why Vi?', url: '#value', target: false },
+  { name: 'How it works', url: '#about', target: false },
   {
     name: 'Center for Racial Justice in Education',
     url: 'https://centerracialjustice.org/',

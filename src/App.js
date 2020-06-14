@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from './components/Layout';
 import FAB from './components/FAB';
 import { FabContext, fabState } from './fab-context';
+import ModalFAQ from './components/ModalFAQ';
 
 import humaaansPhone from './assets/humaaansPhone.svg';
 import humaaansPerson from './assets/humaaansPerson.svg';
@@ -42,7 +43,7 @@ class App extends React.Component {
               </h1>
               <p className='text-xl max-w-md  font-family-montserrat'>
                 In partnership with the Center for Racial Justice in Education,
-                V connects young people to learning about racial justice
+                Vi connects young people to learning about racial justice
               </p>
               <button
                 onClick={() => this.state.toggleFab(!this.state.isFabOpen)}
@@ -66,16 +67,20 @@ class App extends React.Component {
                 <img src={mission} alt='mission' />
               </div>
               <div className='w-1/2 mt-10'>
-                <h1 className='text-2xl font-family-karla py-6'>
-                  Our Mission and Values
-                </h1>
+                <h1 className='text-2xl font-family-karla py-6'>Why Vi?</h1>
                 <p className='font-family-montserrat'>
-                  The Center For Racial Justice in Education focuses on
-                  educating the community on racial justice, our goal is to make
-                  their educational resources easily accessible to the user, by
-                  allowing the user to tell our bot what they’re looking for,
-                  and the bot simply fetches the resources to provide an
-                  interactive experience.
+                  [Normal Font] The Center For Racial Justice in Education
+                  focuses on educating the community on racial justice, our goal
+                  is to make their educational resources easily accessible to
+                  the user, by allowing the user to tell our bot what they’re
+                  looking for, and the bot simply fetches the resources to
+                  provide an interactive experience.
+                </p>
+                <p className='font-family-montserrat py-8'>
+                  [antialiased] Vi is a help bot designed for the Center For
+                  Racial Justice in Education. Vi can help you find resources,
+                  answers, articles, and any information you would find on the
+                  Center For Racial Justice in Education website
                 </p>
               </div>
             </div>
@@ -84,13 +89,16 @@ class App extends React.Component {
             </div>
           </section>
 
-          <section className='p-10 flex flex-col m-auto text-center space-y-4'>
+          <section
+            id='about'
+            className='p-10 flex flex-col m-auto text-center space-y-4'
+          >
             <div className='max-w-xl m-auto'>
               <h1 className='text-2xl font-family-karla'>How it Works</h1>
               <p className='font-family-montserrat py-8'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi accusantium optio vero, nulla cumque quaerat?
-                Aspernatur repellat veniam ullam optio?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                rerum in exercitationem quibusdam quod deserunt ea commodi sunt
+                nulla consequatur.
               </p>
 
               <div className='bg-yellow-500 p-6 rounded'>
@@ -101,14 +109,16 @@ class App extends React.Component {
 
           <section className='bg-yellow-500 text-center p-12'>
             <div className='max-w-xl m-auto'>
-              <h1 className='text-2xl font-family-karla'>Resources</h1>
-              <p className='font-family-montserrat py-4'>
+              <h1 className='text-2xl font-family-karla'>FAQ</h1>
+              <p className='hidden font-family-montserrat py-4'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi accusantium optio vero, nulla cumque quaerat?
                 Aspernatur repellat veniam ullam optio?
               </p>
 
-              <div className='flex space-between space-x-10'>
+              <ModalFAQ></ModalFAQ>
+
+              <div className='flex space-between space-x-10 pt-10'>
                 <img src={CFRJIE} alt='CFRJIE' />
                 <img src={urban} alt='urban' />
                 <img src={world} alt='world' />
@@ -116,26 +126,11 @@ class App extends React.Component {
             </div>
           </section>
 
-          {/* Missions & Values */}
-          <section className='hidden'>
-            <div>
-              <h2 className='text-xl'>Mission</h2>
-            </div>
-          </section>
-
           {/* Floating Action Button */}
           <div className='fixed bottom-0 right-0 p-6'>
             <div className='absolute bottom-0 right-0 p-6'>
               <FAB>
-                <div id='fab-chat'>
-                  <iframe
-                    title='chatbox'
-                    allow='microphone;'
-                    width='350'
-                    height='430'
-                    src='https://console.dialogflow.com/api-client/demo/embedded/76105e13-83a8-465e-9fa2-fe31b78136c4'
-                  ></iframe>
-                </div>
+                <div id='botcopy-embedder-d7lcfheammjct'>CHAT BOT</div>
               </FAB>
             </div>
           </div>

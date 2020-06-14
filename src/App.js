@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from './components/Layout';
-import FAB from './components/FAB';
+// import FAB from './components/FAB';
 import { FabContext, fabState } from './fab-context';
 import ModalFAQ from './components/ModalFAQ';
 
@@ -125,15 +125,6 @@ class App extends React.Component {
               </div>
             </div>
           </section>
-
-          {/* Floating Action Button */}
-          <div className='fixed bottom-0 right-0 p-6'>
-            <div className='absolute bottom-0 right-0 p-6'>
-              <FAB>
-                <div id='botcopy-embedder-d7lcfheammjct'>CHAT BOT</div>
-              </FAB>
-            </div>
-          </div>
         </Layout>
       </FabContext.Provider>
     );

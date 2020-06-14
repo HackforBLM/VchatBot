@@ -35,7 +35,6 @@ class App extends React.Component {
       <FabContext.Provider value={this.state}>
         <Layout>
           {/* Photo & CTA Button */}
-
           <section className=' px-10 py-10 sm:py-32 lg:p-32 flex flex-wrap container mx-auto'>
             <div className='w-full sm:w-1/2 flex flex-col space-y-8 my-auto'>
               <h1 className='text-5xl max-w-md font-family-karla'>
@@ -128,13 +127,15 @@ class App extends React.Component {
           <div className='fixed bottom-0 right-0 p-6'>
             <div className='absolute bottom-0 right-0 p-6'>
               <FAB>
-                <iframe
-                  title='chatbox'
-                  allow='microphone;'
-                  width='350'
-                  height='430'
-                  src='https://console.dialogflow.com/api-client/demo/embedded/76105e13-83a8-465e-9fa2-fe31b78136c4'
-                ></iframe>
+                <div id='fab-chat'>
+                  <iframe
+                    title='chatbox'
+                    allow='microphone;'
+                    width='350'
+                    height='430'
+                    src='https://console.dialogflow.com/api-client/demo/embedded/76105e13-83a8-465e-9fa2-fe31b78136c4'
+                  ></iframe>
+                </div>
               </FAB>
             </div>
           </div>

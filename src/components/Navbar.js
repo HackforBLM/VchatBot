@@ -2,11 +2,12 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 
 const links = [
-  { name: 'Why V?', url: '#value' },
-  { name: 'Integrations', url: '#/' },
+  { name: 'Why V?', url: '#value', target: false },
+  { name: 'Integrations', url: '#/', target: false },
   {
     name: 'Center for Racial Justice in Education',
     url: 'https://centerracialjustice.org/',
+    target: true,
   },
 ];
 
@@ -17,7 +18,9 @@ const Navbar = () => (
     </div>
     <div className='hidden sm:block m-auto list-none flex space-x-10 font-family-montserrat'>
       {links.map((link) => (
-        <a href={link.url}>{link.name}</a>
+        <a target={link.target ? '_blank' : null} href={link.url}>
+          {link.name}
+        </a>
       ))}
     </div>
     <div className='block sm:hidden'>

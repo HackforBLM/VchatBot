@@ -2,9 +2,12 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 
 const links = [
-  { name: 'Why V?', url: '#/' },
+  { name: 'Why V?', url: '#value' },
   { name: 'Integrations', url: '#/' },
-  { name: 'Center for Racial Justice in Education', url: '#/' },
+  {
+    name: 'Center for Racial Justice in Education',
+    url: 'https://centerracialjustice.org/',
+  },
 ];
 
 const Navbar = () => (

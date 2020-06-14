@@ -1,0 +1,12 @@
+.font-family-karla {
+  font-family: 'Karla', sans-serif !important;
+  line-height: normal;
+}
+
+.font-family-montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.bg-yellow-500 {
+  background-color: #fec732 !important;
+}
